@@ -1,6 +1,6 @@
 export default function NavBar() {
   return (
-    <div className="flex justify-between items-center px-6 py-2 sm:px-6 md:justify-start md:space-x-10">
+    <div className="flex justify-between items-center px-6 py-2 sm:px-6 md:justify-start md:space-x-10 container mx-auto">
       <div className="flex justify-start lg:w-0 lg:flex-1">
         <a href="#">
           <h1 className="text-white font-semibold opacity-100 text-xl">
