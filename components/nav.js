@@ -7,82 +7,168 @@ export default function NavBar() {
             mookh.<span className="text-cwc-blue">pay</span>
           </h1>
         </a>
+        <label htmlFor="menu-toggle" className="pointer-cursor md:hidden block">
+          <svg
+            className="fill-current text-gray-400"
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+          >
+            <title>menu</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+          </svg>
+        </label>
+        <input className="hidden" type="checkbox" id="menu-toggle" />
       </div>
 
-      <nav className="hidden md:flex space-x-10">
-        <div className="relative">
-          <button
-            type="button"
-            className="group text-white inline-flex items-center text-base font-semibold opacity-100"
-          >
-            <span>Features</span>
-
-            <svg
-              className="ml-2 h-5 w-5 text-gray-400 group-hover:text-gray-500"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-              aria-hidden="true"
+      <nav>
+        <ul className="list-reset md:flex md:space-x-14 md:items-center">
+          <li className="dropdown relative md:ml-4">
+            <button
+              type="button"
+              className="text-white py-3 inline-flex items-center text-base font-semibold opacity-100"
             >
-              <path
-                fillRule="evenodd"
-                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                clipRule="evenodd"
-              />
-            </svg>
-          </button>
-        </div>
+              <span>Features</span>
 
-        <div className="relative">
-          <button
-            type="button"
-            className="group text-white inline-flex items-center text-base font-semibold focus:outline-none"
-          >
-            <span>Developers</span>
+              <svg
+                className="ml-2 h-5 w-5 text-white invisible lg:visible"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clipRule="evenodd"
+                />
+              </svg>
+            </button>
 
-            <svg
-              className="ml-2 h-5 w-5 text-gray-400 group-hover:text-gray-500"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-              aria-hidden="true"
+            <ul className="absolute dropdown-menu hidden z-10 -ml-4 transform w-screen max-w-sm text-white">
+              <li className="">
+                <a
+                  className="rounded-t bg-gray-500 hover:bg-gray-800 py-2 px-4 block whitespace-no-wrap"
+                  href="#"
+                >
+                  Quick Integration
+                </a>
+              </li>
+              <li className="">
+                <a
+                  className="bg-gray-500 hover:bg-gray-800 py-2 px-4 block whitespace-no-wrap"
+                  href="#"
+                >
+                  Unique Payment Links
+                </a>
+              </li>
+              <li className="">
+                <a
+                  className="rounded-b bg-gray-500 hover:bg-gray-800 py-2 px-4 block whitespace-no-wrap"
+                  href="#"
+                >
+                  Realtime Dashboard
+                </a>
+              </li>
+              <li className="">
+                <a
+                  className="rounded-b bg-gray-500 hover:bg-gray-800 py-2 px-4 block whitespace-no-wrap"
+                  href="#"
+                >
+                  Multiple Payment Methods
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li className="dropdown relative md:ml-4">
+            <button
+              type="button"
+              className="text-white py-3 inline-flex items-center text-base font-semibold opacity-100"
             >
-              <path
-                fillRule="evenodd"
-                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                clipRule="evenodd"
-              />
-            </svg>
-          </button>
-        </div>
+              <span>Developers</span>
 
-        <a href="#" className="text-base font-semibold text-white">
-          {" "}
-          Pricing{" "}
-        </a>
+              <svg
+                className="ml-2 h-5 w-5 text-white invisible lg:visible"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clipRule="evenodd"
+                />
+              </svg>
+            </button>
 
-        <div className="relative">
-          <button
-            type="button"
-            className="group text-white inline-flex items-center text-base font-semibold focus:outline-none"
-          >
-            <span>Company</span>
-
-            <svg
-              className="ml-2 h-5 w-5 text-gray-400 group-hover:text-gray-500"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-              aria-hidden="true"
+            <ul className="absolute dropdown-menu hidden z-10 -ml-4 transform w-screen max-w-sm text-white">
+              <li className="">
+                <a
+                  className="rounded-t bg-gray-500 hover:bg-gray-800 py-2 px-4 block whitespace-no-wrap"
+                  href="#"
+                >
+                  API Reference
+                </a>
+              </li>
+              <li className="">
+                <a
+                  className="bg-gray-500 hover:bg-gray-800 py-2 px-4 block whitespace-no-wrap"
+                  href="#"
+                >
+                  Guides
+                </a>
+              </li>
+              <li className="">
+                <a
+                  className="rounded-b bg-gray-500 hover:bg-gray-800 py-2 px-4 block whitespace-no-wrap"
+                  href="#"
+                >
+                  Packages
+                </a>
+              </li>
+              <li className="">
+                <a
+                  className="rounded-b bg-gray-500 hover:bg-gray-800 py-2 px-4 block whitespace-no-wrap"
+                  href="#"
+                >
+                  Changelog
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li className="md:ml-4">
+            <a
+              className="block no-underline py-3 text-white text-base font-semibold md:p-0"
+              href="#"
             >
-              <path
-                fillRule="evenodd"
-                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                clipRule="evenodd"
-              />
-            </svg>
-          </button>
-        </div>
+              Pricing
+            </a>
+          </li>
+          <li className="md:ml-4">
+            <button
+              type="button"
+              className="group text-white py-3 inline-flex items-center text-base font-semibold"
+            >
+              <span>Company</span>
+
+              <svg
+                className="ml-2 h-5 w-5 text-white invisible lg:visible"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clipRule="evenodd"
+                />
+              </svg>
+            </button>
+          </li>
+        </ul>
       </nav>
       <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
         <a
