@@ -1,8 +1,8 @@
 export default function PricingCard() {
   return (
-    <div className="w-screen mx-8">
+    <div className="w-screen">
       <div className="container mx-auto">
-        <div className="bg-cwc-featuresbg hover:bg-gradient-to-r from-cwc-fone to-cwc-tone rounded-3xl pb-24 opacity-80">
+        <div className="bg-cwc-featuresbg hover:bg-gradient-to-r from-cwc-fone to-cwc-tone rounded-3xl p-12 pb-24 opacity-80">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div>
               <div>
