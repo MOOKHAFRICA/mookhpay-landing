@@ -1,6 +1,6 @@
 export default function Service() {
   return (
-    <section className="w-screen">
+    <section className="w-screen mx-8">
       <div className="container mx-auto lg:mx-auto grid grid-cols-1  md:grid-cols-2 pb-16 gap-4 pt-8">
         <div>
           <p className="text-black font-bold text-3xl opacity-90">

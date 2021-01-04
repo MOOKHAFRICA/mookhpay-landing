@@ -1,12 +1,12 @@
 export default function Feature() {
   return (
-    <div className="pb-24">
+    <div className="pb-24 w-screen">
       <div>
         <h1 className="container mx-8 lg:mx-auto text-white font-bold text-2xl pt-10 pb-8">
           Key Features
         </h1>
       </div>
-      <div className="mx-2 grid grid-cols-1 md:grid-cols-2 gap-8 lg:mx-16">
+      <div className="mx-2 grid grid-cols-1 md:grid-cols-2 gap-8   container mx-auto">
         <div className="bg-cwc-loginbg hover:bg-gradient-to-r from-cwc-fone to-cwc-tone rounded-3xl p-8 lg:p-12 opacity-80">
           <p className="text-cwc-blue font-bold pb-2">
             <a href="#"> Get Started </a>

@@ -2,11 +2,12 @@ export default function NavBar() {
   return (
     <div className="flex justify-between items-center px-6 py-2 sm:px-6 md:justify-start md:space-x-10 container mx-auto">
       <div className="flex justify-start lg:w-0 lg:flex-1">
-        <a href="#">
-          <h1 className="text-white font-semibold opacity-100 text-xl">
-            mookh.<span className="text-cwc-blue">pay</span>
-          </h1>
-        </a>
+        <h1 className="leading-none text-2xl text-white font-bold">
+          <a className="no-underline text-white" href="/">
+            Mookh.<span className="text-cwc-blue">Pay</span>
+          </a>
+        </h1>
+
         <label htmlFor="menu-toggle" className="pointer-cursor md:hidden block">
           <svg
             className="fill-current text-gray-400"

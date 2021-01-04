@@ -14,10 +14,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="container">
+      <main className="">
         <Header />
         <Service />
-        <section className="bg-black pb-28 w-screen">
+        <section className="bg-black pb-28 wx-auto">
           <Features />
           <Pricing />
           <PricingCard />

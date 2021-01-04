@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="container  mx-auto mt-10 mb-14 w-screen">
+    <footer className="container  mx-8 mt-10 mb-14 w-screen">
       <div>
         <h1 className="text-blck font-black text-2xl">You're in good hands.</h1>
       </div>
