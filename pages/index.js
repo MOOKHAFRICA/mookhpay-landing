@@ -8,13 +8,14 @@ import PricingCard from "./../components/pricingCard";
 
 export default function Home() {
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <Head>
         <title>mookh.pay</title>
         <meta
           name="viewport"
-          content="width=device-width, initial-scale=1.0"
+          content="user-scalable=no, width=device-width, initial-scale=1.0,  minimum-scale=1, maximum-scale=1"
         ></meta>
+        <meta name="apple-mobile-web-app-capable" content="yes" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
