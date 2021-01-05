@@ -1,5 +1,4 @@
 export default function NavBar({ isOpen }) {
-  console.log(isOpen);
   return (
     <nav>
       <ul
