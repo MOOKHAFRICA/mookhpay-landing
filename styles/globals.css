@@ -5,3 +5,7 @@
 .dropdown:hover .dropdown-menu {
   display: block;
 }
+
+#menu-toggle:checked + #menu {
+  display: block;
+}
