@@ -7,8 +7,8 @@ export default function Footer() {
             You're in good hands.
           </h1>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-4 mt-14">
-          <div>
+        <div className="grid grid-cols-1 md:grid-cols-3 mt-14">
+          {/* <div>
             <div>
               <p className="text-black font-black text-lg">Features</p>
             </div>
@@ -21,14 +21,20 @@ export default function Footer() {
             <div>
               <p className="text-cwc-grey text-base mt-3">Security</p>
             </div>
-          </div>
+          </div> */}
 
           <div>
             <div>
               <p className="text-black font-black text-lg">Developers</p>
             </div>
-            <div>
-              <p className="text-cwc-grey text-base mt-3">API Reference</p>
+            <div className="pt-2">
+              <a
+                className="text-cwc-grey text-base mt-3"
+                href="https://mookhpay.docs.apiary.io/"
+                target="_blank"
+              >
+                API Reference
+              </a>
             </div>
             <div>
               <p className="text-cwc-grey text-base mt-3">Guides</p>
@@ -51,9 +57,6 @@ export default function Footer() {
             <div>
               <p className="text-cwc-grey text-base mt-3">Documentation</p>
             </div>
-            <div>
-              <p className="text-cwc-grey text-base mt-3">Logo Assets</p>
-            </div>
           </div>
 
           <div>
@@ -67,13 +70,6 @@ export default function Footer() {
             </div>
             <div>
               <p className="text-cwc-grey text-base mt-3">info@mookhpay.com</p>
-            </div>
-            <div>
-              <p className="text-cwc-grey text-base mt-3">Team</p>
-            </div>
-
-            <div>
-              <p className="text-cwc-grey text-base mt-3">Careers</p>
             </div>
           </div>
         </div>

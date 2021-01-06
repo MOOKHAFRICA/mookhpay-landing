@@ -22,9 +22,13 @@ export default function Feature() {
             documentation.
           </p>
           <div className="mt-4">
-            <button className="bg-cwc-featuresbtnbg text-white mt-3 mb-4 lg:mb-0 lg:mt-0 py-3 px-6 rounded-md font-medium mr-6">
+            <a
+              href="https://mookhpay.docs.apiary.io/"
+              target="_blank"
+              className="bg-cwc-featuresbtnbg text-white mt-3 mb-4 lg:mb-0 lg:mt-0 py-3 px-6 rounded-md font-medium mr-6"
+            >
               Documentation
-            </button>
+            </a>
             <button className="text-white font-medium py-2 px-8 border border-white rounded-sm">
               API Request
             </button>

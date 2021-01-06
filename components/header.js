@@ -9,7 +9,7 @@ export default function Header() {
         <div className="flex items-center justify-between mb-4 md:mb-0">
           <h1 className="leading-none text-2xl text-white font-bold">
             <a className="no-underline text-white" href="#">
-              Mookh.<span className="text-cwc-blue">Pay</span>
+              mookh.<span className="text-cwc-blue">Pay</span>
             </a>
           </h1>
 

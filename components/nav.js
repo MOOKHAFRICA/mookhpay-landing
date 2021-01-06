@@ -89,7 +89,8 @@ export default function NavBar({ isOpen }) {
             <li className="">
               <a
                 className="rounded-t bg-gray-500 hover:bg-gray-800 py-2 px-4 block whitespace-no-wrap"
-                href="#"
+                href="https://mookhpay.docs.apiary.io/"
+                target="_blank"
               >
                 API Reference
               </a>
