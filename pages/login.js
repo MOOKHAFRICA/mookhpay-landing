@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 export default function Home() {
   return (
     <div className="overflow-x-hidden overflow-y-hidden">
@@ -9,7 +10,7 @@ export default function Home() {
           content="user-scalable=no, width=device-width, initial-scale=1.0,  minimum-scale=1, maximum-scale=1"
         ></meta>
         <meta charSet="utf-8" />
-        <title>Login - Mookh.pay</title>
+        <title>Login | mookh.pay</title>
         <meta
           name="description"
           content="Login to  Mookh.pay to access all the cool features we have in store for you and your business."
@@ -34,12 +35,14 @@ export default function Home() {
           <div className="bg-cwc-loginbg h-20 lg:h-full w-full">
             <div className="mx-6 lg:mt-72">
               <h1 className="text-white font-extrabold text-2xl pt-6 lg:pt-0">
-                <a href="/">
-                  mookh.
-                  <span className="text-cwc-blue font-extrabold text-2xl">
-                    pay
-                  </span>
-                </a>
+                <Link href="/">
+                  <a>
+                    mookh.
+                    <span className="text-cwc-blue font-extrabold text-2xl">
+                      pay
+                    </span>
+                  </a>
+                </Link>
               </h1>
               <p className="invisible lg:visible text-white font-medium text-xl opacity-60 mt-10">
                 The payments solution for small <br />

@@ -104,7 +104,7 @@ export default function Footer() {
             </p>
           </div>
           <div>
-            <p className="text-black font-black text-base">
+            <p className="text-black font-medium text-base">
               © Mookh Africa Ltd.
             </p>
           </div>

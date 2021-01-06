@@ -16,7 +16,7 @@ export default function Home() {
           content="user-scalable=no, width=device-width, initial-scale=1.0,  minimum-scale=1, maximum-scale=1"
         ></meta>
         <meta charSet="utf-8" />
-        <title>Home - Mookh.pay</title>
+        <title>Home | mookh.pay</title>
         <meta
           name="description"
           content="Online payment processing for internet businesses. Mookh.pay is a suite of payment APIs that powers commerce for online businesses of all sizes, including fraud prevention, and subscription management. Use Mookh.pay’s payment platform to accept and process payments online for easy-to-use commerce solutions."

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Link from "next/link";
 import NavBar from "./nav";
 import HeroSection from "./hero";
 export default function Header() {
@@ -8,9 +9,11 @@ export default function Header() {
       <header className="lg:container lg:mx-auto md:flex md:items-center md:justify-between p-4 pb-0 shadow-lg md:pb-4">
         <div className="flex items-center justify-between mb-4 md:mb-0">
           <h1 className="leading-none text-2xl text-white font-bold">
-            <a className="no-underline text-white" href="#">
-              mookh.<span className="text-cwc-blue">Pay</span>
-            </a>
+            <Link href="/">
+              <a className="no-underline text-white">
+                mookh.<span className="text-cwc-blue">Pay</span>
+              </a>
+            </Link>
           </h1>
 
           <button
@@ -42,12 +45,11 @@ export default function Header() {
         <div className="mb-4 md:mb-0">
           <ul className="hidden list-reset md:flex lg:space-x-10">
             <li className="md:ml-4">
-              <a
-                className="block no-underline text-base font-semibold py-2 text-white md:p-0"
-                href="/login"
-              >
-                Log In
-              </a>
+              <Link href="/login">
+                <a className="block no-underline text-base font-semibold py-2 text-white md:p-0">
+                  Log In
+                </a>
+              </Link>
             </li>
             <li className="md:ml-4">
               <a
