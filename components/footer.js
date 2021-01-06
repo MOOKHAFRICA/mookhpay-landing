@@ -82,7 +82,7 @@ export default function Footer() {
           </div>
           <div>
             <input
-              className="focus:ring-cwc-blue focus:border-cwc-blue mb-3 lg:mb-0 w-auto lg:w-full pr-20 md:pr-40"
+              className="focus:ring-cwc-blue focus:border-cwc-blue mb-3 lg:mb-0 w-auto lg:w-full pr-20 md:pr-40 border border-gray-300"
               type="text"
               placeholder="E-mail Address"
             />
