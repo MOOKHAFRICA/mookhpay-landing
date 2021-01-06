@@ -3,29 +3,14 @@ export default function Footer() {
     <footer className="mx-8 mt-10 mb-14 w-screen">
       <div className="container mx-auto">
         <div>
-          <h1 className="text-blck font-black text-2xl">
+          <h1 className="text-blck font-medium text-2xl">
             You're in good hands.
           </h1>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 mt-14">
-          {/* <div>
-            <div>
-              <p className="text-black font-black text-lg">Features</p>
-            </div>
-            <div>
-              <p className="text-cwc-grey text-base mt-3">Payments</p>
-            </div>
-            <div>
-              <p className="text-cwc-grey text-base mt-3">Checkout Process</p>
-            </div>
-            <div>
-              <p className="text-cwc-grey text-base mt-3">Security</p>
-            </div>
-          </div> */}
-
           <div>
             <div>
-              <p className="text-black font-black text-lg">Developers</p>
+              <p className="text-black font-medium text-lg">Developers</p>
             </div>
             <div className="pt-2">
               <a
@@ -49,7 +34,9 @@ export default function Footer() {
 
           <div>
             <div>
-              <p className="mt-7 md:mt-0 text-black font-black text-lg">Help</p>
+              <p className="mt-7 md:mt-0 text-black  text-lg font-medium">
+                Help
+              </p>
             </div>
             <div>
               <p className="text-cwc-grey text-base mt-3">Request API</p>
@@ -61,7 +48,7 @@ export default function Footer() {
 
           <div>
             <div>
-              <p className="mt-6 md:mt-0 text-black font-black text-lg">
+              <p className="mt-6 md:mt-0 text-black font-medium text-lg">
                 Contact Us
               </p>
             </div>
@@ -75,7 +62,7 @@ export default function Footer() {
         </div>
         <div className="lg:flex space-x-4 md:space-x-16 mt-10 lg:mt-24">
           <div className="invisible lg:visible">
-            <p className="text-black font-black">
+            <p className="text-black  font-semibold">
               Receive the latest <br />
               updates from our team
             </p>
