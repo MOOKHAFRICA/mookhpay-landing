@@ -14,7 +14,7 @@ export default function NavBar({ isOpen }) {
             <span>Features</span>
 
             <svg
-              className="ml-2 h-5 w-5 text-white invisible lg:visible"
+              className="ml-2 h-5 w-5 text-white visible"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
               fill="currentColor"
@@ -71,7 +71,7 @@ export default function NavBar({ isOpen }) {
             <span>Developers</span>
 
             <svg
-              className="ml-2 h-5 w-5 text-white invisible lg:visible"
+              className="ml-2 h-5 w-5 text-white  lg:visible"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
               fill="currentColor"
@@ -137,7 +137,7 @@ export default function NavBar({ isOpen }) {
             <span>Company</span>
 
             <svg
-              className="ml-2 h-5 w-5 text-white invisible lg:visible"
+              className="ml-2 h-5 w-5 text-white visible"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
               fill="currentColor"
