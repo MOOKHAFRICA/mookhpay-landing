@@ -17,9 +17,9 @@ module.exports = {
           logininputbg: "#333333",
         },
       },
-      // fontFamily: {
-      //   body: ['Poppins', 'sans-serif'],
-      // },
+      fontFamily: {
+        body: ["Poppins"],
+      },
     },
   },
   variants: {
