@@ -96,7 +96,7 @@ export default function Footer() {
             </button>
           </div>
         </div>
-        <div className="mt-10 mb-10 border border-gray-600 opacity-20 xlg:mr-28">
+        <div className="mt-10 mb-10 border-b border-gray-600 opacity-20 xlg:mr-28">
           <hr />
         </div>
         <div className="grid text-center lg:text-justify grid-cols-1 lg:grid-cols-4 mt-6">
