@@ -1,6 +1,9 @@
 export default function Pricing() {
   return (
-    <div className="container mx-8 lg:mx-auto grid grid-cols-1 md:grid-cols-2 pb-16">
+    <div
+      className="container mx-8 lg:mx-auto grid grid-cols-1 md:grid-cols-2 pb-16"
+      id="pricing"
+    >
       <div>
         <p className="text-white text-2xl font-extrabold mb-4">Pricing</p>
         <p className="text-white font-normal opacity-70">

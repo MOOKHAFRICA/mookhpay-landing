@@ -20,7 +20,7 @@ export default function Service() {
             free from artificial barriers imposed by closed ecosystems.
           </p>
           <p className="text-cwc-blue font-semibold text-base">
-            <a href="#">View pricing »</a>
+            <a href="#pricing">View pricing »</a>
           </p>
         </div>
       </div>

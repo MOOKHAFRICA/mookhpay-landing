@@ -98,7 +98,8 @@ export default function NavBar({ isOpen }) {
             <li className="">
               <a
                 className="bg-gray-500 hover:bg-gray-800 py-2 px-4 block whitespace-no-wrap"
-                href="#"
+                href="https://mookhpay.docs.apiary.io/#introduction/onboarding"
+                target="_blank"
               >
                 Guides
               </a>
@@ -124,7 +125,7 @@ export default function NavBar({ isOpen }) {
         <li className="md:ml-4">
           <a
             className="text-white py-3 inline-flex items-center text-base font-semibold opacity-100"
-            href="#"
+            href="#pricing"
           >
             Pricing
           </a>

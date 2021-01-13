@@ -1,3 +1,4 @@
+import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="mx-8 mt-10 mb-14 w-screen">
@@ -13,36 +14,52 @@ export default function Footer() {
               <p className="text-black font-medium text-lg">Developers</p>
             </div>
             <div className="pt-2">
-              <a
-                className="text-cwc-grey text-base mt-3"
-                href="https://mookhpay.docs.apiary.io/"
+              <Link href="https://mookhpay.docs.apiary.io/">
+                <a className="text-cwc-grey text-base mt-3" target="_blank">
+                  API Reference
+                </a>
+              </Link>
+            </div>
+            <div className="pt-2">
+              <Link
+                href="https://mookhpay.docs.apiary.io/#introduction/onboarding"
                 target="_blank"
               >
-                API Reference
-              </a>
+                <a className="text-cwc-grey text-base mt-3" target="_blank">
+                  Guides
+                </a>
+              </Link>
             </div>
-            <div>
-              <p className="text-cwc-grey text-base mt-3">Guides</p>
+            <div className="pt-2">
+              <Link href="/#">
+                <a className="text-cwc-grey text-base mt-3">Packages</a>
+              </Link>
             </div>
-            <div>
-              <p className="text-cwc-grey text-base mt-3">Packages</p>
-            </div>
-            <div>
-              <p className="text-cwc-grey text-base mt-3">Changelog</p>
+            <div className="pt-2">
+              <Link href="/#">
+                <a className="text-cwc-grey text-base mt-3">Changelog</a>
+              </Link>
             </div>
           </div>
-
           <div>
             <div>
               <p className="mt-7 md:mt-0 text-black  text-lg font-medium">
                 Help
               </p>
             </div>
-            <div>
-              <p className="text-cwc-grey text-base mt-3">Request API</p>
+            <div className="pt-2">
+              <Link href="https://mookhpay.docs.apiary.io/#introduction/payment-methods-(active)">
+                <a className="text-cwc-grey text-base mt-3" target="_blank">
+                  Request API
+                </a>
+              </Link>
             </div>
-            <div>
-              <p className="text-cwc-grey text-base mt-3">Documentation</p>
+            <div className="pt-2">
+              <Link href="https://mookhpay.docs.apiary.io/#reference/0/api-login">
+                <a className="text-cwc-grey text-base mt-3" target="_blank">
+                  Documentation
+                </a>
+              </Link>
             </div>
           </div>
 
@@ -88,10 +105,12 @@ export default function Footer() {
         </div>
         <div className="grid text-center lg:text-justify grid-cols-1 lg:grid-cols-4 mt-6">
           <div className="mb-4">
-            <h1 className="text-black font-black text-3xl">
-              mookh.
-              <span className="text-cwc-blue font-black text-3xl">pay</span>
-            </h1>
+            <Link href="/">
+              <a className="text-black font-black text-3xl">
+                mookh.
+                <span className="text-cwc-blue font-black text-3xl">pay</span>
+              </a>
+            </Link>
           </div>
           <div className="mb-2">
             <p className="text-cwc-grey text-base underline">
