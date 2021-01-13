@@ -1,5 +1,6 @@
 import Link from "next/link";
 export default function Footer() {
+  const yearNow = new Date().getFullYear();
   return (
     <footer className="mx-8 mt-10 mb-14 w-screen">
       <div className="container mx-auto">
@@ -124,7 +125,7 @@ export default function Footer() {
           </div>
           <div>
             <p className="text-black font-medium text-base">
-              © Mookh Africa Ltd.
+              {`© Mookh Africa Ltd ${yearNow}.`}
             </p>
           </div>
         </div>
