@@ -1,35 +1,20 @@
-import Head from "next/head";
 import Link from "next/link";
+import { NextSeo } from "next-seo";
 export default function Home() {
   return (
     <div className="overflow-x-hidden overflow-y-hidden">
-      <Head>
-        <title>mookh.pay</title>
-        <meta
-          name="viewport"
-          content="user-scalable=no, width=device-width, initial-scale=1.0,  minimum-scale=1, maximum-scale=1"
-        ></meta>
-        <meta charSet="utf-8" />
-        <title>Login | mookh.pay</title>
-        <meta
-          name="description"
-          content="Login to  Mookh.pay to access all the cool features we have in store for you and your business."
-        />
-        {/* Open Graph */}
-        <meta property="og:title" content="Login - Mookh.pay" key="ogtitle" />
-        <meta
-          property="og:description"
-          content="Login to  Mookh.pay to access all the cool features we have in store for you and your business."
-          key="ogdesc"
-        />
-        <meta property="og:url" content="mookhpay.com/login" key="ogurl" />
-        <meta property="og:site_name" content="mookh.pay" key="ogsitename" />
+      <NextSeo
+        title="Login | mookh.pay"
+        description="Login to  Mookh.pay to access all the cool features we have in store for you and your business."
+        canonical="https://mookhpay.com/login"
+        openGraph={{
+          url: "https://mookhpay.com/login",
+          title: "Login | mookh.pay",
+          description:
+            "Login to  Mookh.pay to access all the cool features we have in store for you and your business.",
+        }}
+      />
 
-        <meta name="twitter:card" content="summary" key="twcard" />
-        <meta name="twitter:creator" content="@MookhAfrica" key="twhandle" />
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <main>
         <div className="h-screen w-screen grid grid-cols-1 md:grid-cols-1 lg:flex">
           <div className="bg-cwc-loginbg h-20 lg:h-full w-full">
