@@ -2,6 +2,7 @@ import { useState } from "react";
 import Link from "next/link";
 import NavBar from "./nav";
 import HeroSection from "./hero";
+
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   return (
@@ -11,7 +12,7 @@ export default function Header() {
           <h1 className="leading-none text-2xl text-white font-bold">
             <Link href="/">
               <a className="no-underline text-white">
-                mookh.<span className="text-cwc-blue">Pay</span>
+                <img src="/logo1.png" className="logo-img" />
               </a>
             </Link>
           </h1>

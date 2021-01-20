@@ -108,8 +108,7 @@ export default function Footer() {
           <div className="mb-4">
             <Link href="/">
               <a className="text-black font-black text-3xl">
-                mookh.
-                <span className="text-cwc-blue font-black text-3xl">pay</span>
+                <img src="logo.png" className="logo-footer " />
               </a>
             </Link>
           </div>

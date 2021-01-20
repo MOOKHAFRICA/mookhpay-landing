@@ -14,3 +14,12 @@ html {
 #menu-toggle:checked + #menu {
   display: block;
 }
+
+.logo-img {
+  width: 133px;
+  height: 32px;
+}
+.logo-footer {
+  width: 160px;
+  height: 39px;
+}
