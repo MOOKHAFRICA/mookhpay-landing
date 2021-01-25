@@ -2,19 +2,20 @@ export default function NavBar({ isOpen }) {
   return (
     <nav>
       <ul
+        id="menu"
         className={` ${
           isOpen ? "block" : "hidden"
-        } md:flex md:space-x-14 md:items-center" id="menu"`}
+        } md:flex md:space-x-20 md:items-center`}
       >
-        <li className="dropdown relative md:ml-4">
+        <li className="relative dropdown md:ml-4">
           <button
             type="button"
-            className="text-white py-3 inline-flex items-center text-base font-semibold opacity-100 "
+            className="inline-flex items-center py-3 text-base font-semibold text-white opacity-100"
           >
             <span>Features</span>
 
             <svg
-              className="ml-2 h-5 w-5 text-white visible"
+              className="w-5 h-5 ml-2 text-white visible"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
               fill="currentColor"
@@ -28,10 +29,10 @@ export default function NavBar({ isOpen }) {
             </svg>
           </button>
 
-          <ul className="absolute dropdown-menu hidden z-10 -ml-4 transform w-screen max-w-sm text-white">
+          <ul className="absolute z-10 hidden w-screen max-w-sm -ml-4 text-white transform dropdown-menu">
             <li className="">
               <a
-                className="rounded-t bg-gray-500 hover:bg-gray-800 py-2 px-4 block whitespace-no-wrap"
+                className="block px-4 py-2 whitespace-no-wrap bg-gray-500 rounded-t hover:bg-gray-800"
                 href="#"
               >
                 Quick Integration
@@ -39,7 +40,7 @@ export default function NavBar({ isOpen }) {
             </li>
             <li className="">
               <a
-                className="bg-gray-500 hover:bg-gray-800 py-2 px-4 block whitespace-no-wrap"
+                className="block px-4 py-2 whitespace-no-wrap bg-gray-500 hover:bg-gray-800"
                 href="#"
               >
                 Unique Payment Links
@@ -47,7 +48,7 @@ export default function NavBar({ isOpen }) {
             </li>
             <li className="">
               <a
-                className="rounded-b bg-gray-500 hover:bg-gray-800 py-2 px-4 block whitespace-no-wrap"
+                className="block px-4 py-2 whitespace-no-wrap bg-gray-500 rounded-b hover:bg-gray-800"
                 href="#"
               >
                 Realtime Dashboard
@@ -55,7 +56,7 @@ export default function NavBar({ isOpen }) {
             </li>
             <li className="">
               <a
-                className="rounded-b bg-gray-500 hover:bg-gray-800 py-2 px-4 block whitespace-no-wrap"
+                className="block px-4 py-2 whitespace-no-wrap bg-gray-500 rounded-b hover:bg-gray-800"
                 href="#"
               >
                 Multiple Payment Methods
@@ -63,15 +64,15 @@ export default function NavBar({ isOpen }) {
             </li>
           </ul>
         </li>
-        <li className="dropdown relative md:ml-4">
+        <li className="relative dropdown md:ml-4">
           <button
             type="button"
-            className="text-white py-3 inline-flex items-center text-base font-semibold opacity-100"
+            className="inline-flex items-center py-3 text-base font-semibold text-white opacity-100"
           >
             <span>Developers</span>
 
             <svg
-              className="ml-2 h-5 w-5 text-white  lg:visible"
+              className="w-5 h-5 ml-2 text-white visible"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
               fill="currentColor"
@@ -85,10 +86,10 @@ export default function NavBar({ isOpen }) {
             </svg>
           </button>
 
-          <ul className="absolute dropdown-menu hidden z-10 -ml-4 transform w-screen max-w-sm text-white">
+          <ul className="absolute z-10 hidden w-screen max-w-sm -ml-4 text-white transform dropdown-menu">
             <li className="">
               <a
-                className="rounded-t bg-gray-500 hover:bg-gray-800 py-2 px-4 block whitespace-no-wrap"
+                className="block px-4 py-2 whitespace-no-wrap bg-gray-500 rounded-t hover:bg-gray-800"
                 href="https://mookhpay.docs.apiary.io/"
                 target="_blank"
               >
@@ -97,7 +98,7 @@ export default function NavBar({ isOpen }) {
             </li>
             <li className="">
               <a
-                className="bg-gray-500 hover:bg-gray-800 py-2 px-4 block whitespace-no-wrap"
+                className="block px-4 py-2 whitespace-no-wrap bg-gray-500 hover:bg-gray-800"
                 href="https://mookhpay.docs.apiary.io/#introduction/onboarding"
                 target="_blank"
               >
@@ -106,7 +107,7 @@ export default function NavBar({ isOpen }) {
             </li>
             <li className="">
               <a
-                className="rounded-b bg-gray-500 hover:bg-gray-800 py-2 px-4 block whitespace-no-wrap"
+                className="block px-4 py-2 whitespace-no-wrap bg-gray-500 rounded-b hover:bg-gray-800"
                 href="#"
               >
                 Packages
@@ -114,7 +115,7 @@ export default function NavBar({ isOpen }) {
             </li>
             <li className="">
               <a
-                className="rounded-b bg-gray-500 hover:bg-gray-800 py-2 px-4 block whitespace-no-wrap"
+                className="block px-4 py-2 whitespace-no-wrap bg-gray-500 rounded-b hover:bg-gray-800"
                 href="#"
               >
                 Changelog
@@ -122,35 +123,21 @@ export default function NavBar({ isOpen }) {
             </li>
           </ul>
         </li>
-        <li className="md:ml-4">
+        <li className="relative md:ml-4">
           <a
-            className="text-white py-3 inline-flex items-center text-base font-semibold opacity-100"
+            className="block py-3 text-base font-semibold text-white no-underline md:p-0"
             href="#pricing"
           >
             Pricing
           </a>
         </li>
-        <li className="md:ml-4">
-          <button
-            type="button"
-            className="group text-white py-3 inline-flex items-center text-base font-semibold"
+        <li className="relative md:ml-4">
+          <a
+            className="block py-3 text-base font-semibold text-white no-underline md:p-0"
+            href="#"
           >
-            <span>Company</span>
-
-            <svg
-              className="ml-2 h-5 w-5 text-white visible"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-              aria-hidden="true"
-            >
-              <path
-                fillRule="evenodd"
-                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                clipRule="evenodd"
-              />
-            </svg>
-          </button>
+            Company
+          </a>
         </li>
       </ul>
     </nav>

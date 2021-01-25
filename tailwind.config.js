@@ -6,6 +6,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        backgroundImage: (theme) => ({
+          "hero-pattern": "url('/public/img/hero.svg')",
+        }),
         cwc: {
           blue: "#1873E9",
           grey: "#717171",
@@ -16,6 +19,9 @@ module.exports = {
           loginbg: "#040f24",
           logininputbg: "#333333",
         },
+      },
+      inset: {
+        464: "29rem",
       },
       fontFamily: {
         body: ["Poppins"],
