@@ -31,7 +31,7 @@ export default function NavBar({ isOpen }) {
               </svg>
             </button>
 
-            <ul className="absolute z-10 hidden w-screen max-w-sm -ml-4 text-white transform dropdown-menu bg-gradient-to-r from-cwc-fone to-cwc-tone rounded-t">
+            <ul className="absolute z-10 hidden w-screen max-w-sm -ml-4 text-white transform dropdown-menu bg-cwc-featuresbg rounded-t mx-3">
               <li className="">
                 <a
                   className="block px-4 py-2 whitespace-no-wrap  hover:bg-black"
@@ -88,7 +88,7 @@ export default function NavBar({ isOpen }) {
               </svg>
             </button>
 
-            <ul className="absolute z-10 hidden w-screen max-w-sm -ml-4 text-white transform dropdown-menu  bg-gradient-to-r from-cwc-fone to-cwc-tone rounded-t">
+            <ul className="absolute z-10 hidden w-screen max-w-sm -ml-4 text-white transform dropdown-menu  bg-cwc-featuresbg mx-3">
               <li className="">
                 <a
                   className="block px-4 py-2 whitespace-no-wrap  hover:bg-black "
