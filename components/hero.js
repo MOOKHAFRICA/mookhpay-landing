@@ -2,10 +2,10 @@ export default function HeroSection() {
   return (
     <div className="container mx-auto">
       <div className="mx-8 lg:mx-0">
-        <h2 className="font-semibold text-3xl text-white opacity-90 mt-32">
+        <h2 className="font-semibold text-5xl text-white opacity-90 mt-32">
           The payments solution for small businesses.
         </h2>
-        <p className="font-semibold text-lg text-white opacity-90 mt-16">
+        <p className="font-semibold text-xl text-white opacity-90 mt-16">
           Accept online payments today. Grow your business with
           <br />
           trusted effortless payments.
