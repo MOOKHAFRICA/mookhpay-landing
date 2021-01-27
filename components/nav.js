@@ -34,7 +34,7 @@ export default function NavBar({ isOpen }) {
             <ul className="absolute z-10 hidden w-screen max-w-sm -ml-4 text-white transform dropdown-menu bg-cwc-featuresbg rounded-xl mx-3">
               <li className="">
                 <a
-                  className="block px-4 py-2 whitespace-no-wrap  hover:bg-cwc-blue rounded-t"
+                  className="block px-4 py-2 whitespace-no-wrap  hover:bg-cwc-blue rounded"
                   href="#feature-1"
                 >
                   Quick Integration
@@ -42,7 +42,7 @@ export default function NavBar({ isOpen }) {
               </li>
               <li className="">
                 <a
-                  className="block px-4 py-2 whitespace-no-wrap hover:bg-cwc-blue rounded-b"
+                  className="block px-4 py-2 whitespace-no-wrap hover:bg-cwc-blue rounded"
                   href="#feature-2"
                 >
                   Unique Payment Links
@@ -50,7 +50,7 @@ export default function NavBar({ isOpen }) {
               </li>
               <li className="">
                 <a
-                  className="block px-4 py-2 whitespace-no-wrap hover:bg-cwc-blue rounded-b"
+                  className="block px-4 py-2 whitespace-no-wrap hover:bg-cwc-blue rounded"
                   href="#feature-3"
                 >
                   Realtime Dashboard
@@ -58,7 +58,7 @@ export default function NavBar({ isOpen }) {
               </li>
               <li className="">
                 <a
-                  className="block px-4 py-2 whitespace-no-wrap  hover:bg-cwc-blue rounded-b"
+                  className="block px-4 py-2 whitespace-no-wrap  hover:bg-cwc-blue rounded"
                   href="#feature-4"
                 >
                   Multiple Payment Methods
@@ -91,7 +91,7 @@ export default function NavBar({ isOpen }) {
             <ul className="absolute z-10 hidden w-screen max-w-sm -ml-4 text-white transform dropdown-menu  rounded-xl bg-cwc-featuresbg mx-3">
               <li className="">
                 <a
-                  className="block px-4 py-2 whitespace-no-wrap rounded-t hover:bg-cwc-blue"
+                  className="block px-4 py-2 whitespace-no-wrap rounded hover:bg-cwc-blue"
                   href="https://mookhpay.docs.apiary.io/"
                   target="_blank"
                 >
@@ -100,7 +100,7 @@ export default function NavBar({ isOpen }) {
               </li>
               <li className="">
                 <a
-                  className="block px-4 py-2 whitespace-no-wrap rounded-b hover:bg-cwc-blue"
+                  className="block px-4 py-2 whitespace-no-wrap rounded hover:bg-cwc-blue"
                   href="https://mookhpay.docs.apiary.io/#introduction/onboarding"
                   target="_blank"
                 >
