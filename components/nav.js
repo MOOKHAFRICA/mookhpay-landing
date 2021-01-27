@@ -88,10 +88,10 @@ export default function NavBar({ isOpen }) {
               </svg>
             </button>
 
-            <ul className="absolute z-10 hidden w-screen max-w-sm -ml-4 text-white transform dropdown-menu">
+            <ul className="absolute z-10 hidden w-screen max-w-sm -ml-4 text-white transform dropdown-menu  bg-gradient-to-r from-cwc-fone to-cwc-tone rounded-t">
               <li className="">
                 <a
-                  className="block px-4 py-2 whitespace-no-wrap bg-gray-500 rounded-t hover:bg-gray-800"
+                  className="block px-4 py-2 whitespace-no-wrap  hover:bg-black "
                   href="https://mookhpay.docs.apiary.io/"
                   target="_blank"
                 >
@@ -100,7 +100,7 @@ export default function NavBar({ isOpen }) {
               </li>
               <li className="">
                 <a
-                  className="block px-4 py-2 whitespace-no-wrap bg-gray-500 hover:bg-gray-800"
+                  className="block px-4 py-2 whitespace-no-wrap hover:bg-black"
                   href="https://mookhpay.docs.apiary.io/#introduction/onboarding"
                   target="_blank"
                 >
