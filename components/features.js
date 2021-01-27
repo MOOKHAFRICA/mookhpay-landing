@@ -32,9 +32,6 @@ export default function Feature() {
             >
               Documentation
             </a>
-            <button className="text-white font-medium py-2 px-8 border border-white rounded-sm mt-6">
-              API Request
-            </button>
           </div>
         </div>
         <div
