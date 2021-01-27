@@ -77,25 +77,6 @@ export default function Header() {
         </div>
 
         <NavBar isOpen={isOpen} />
-        <div className="relative mb-4 md:mb-0 lg:mr-6">
-          <ul className="hidden list-reset md:flex md:space-x-10">
-            <li className="md:ml-4">
-              <Link href="/login">
-                <a className="block no-underline text-base font-semibold py-2 text-white md:p-0">
-                  Log In
-                </a>
-              </Link>
-            </li>
-            <li className="md:ml-4">
-              <a
-                className="block py-4 text-base font-semibold text-cwc-blue md:p-0"
-                href="/register"
-              >
-                Sign Up
-              </a>
-            </li>
-          </ul>
-        </div>
       </header>
       <HeroSection />
     </div>

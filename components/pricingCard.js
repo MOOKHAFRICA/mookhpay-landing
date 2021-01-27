@@ -26,6 +26,9 @@ export default function PricingCard() {
               <div>
                 <p className="text-white font-extrabold mt-3">M-Pesa</p>
               </div>
+              <div>
+                <p className="text-white font-extrabold mt-3">Bonga Points</p>
+              </div>
             </div>
 
             <div>
@@ -55,6 +58,11 @@ export default function PricingCard() {
                     Kenya
                   </p>
                 </div>
+                <div>
+                  <p className="text-white opacity-70 font-extrabold mt-3">
+                    Kenya
+                  </p>
+                </div>
               </div>
             </div>
 
@@ -75,7 +83,10 @@ export default function PricingCard() {
                   <p className="text-white font-extrabold mt-3">Ugx 0 + 3%</p>
                 </div>
                 <div>
-                  <p className="text-white font-extrabold mt-3">Kes 30 + 0%</p>
+                  <p className="text-white font-extrabold mt-3">Kes 0 + 2%</p>
+                </div>
+                <div>
+                  <p className="text-white font-extrabold mt-3">Kes 0 + 2%</p>
                 </div>
               </div>
             </div>
@@ -91,12 +102,14 @@ export default function PricingCard() {
                 </p>
               </div>
               <div>
-                <p className="text-white font-extrabold md:mb-32 pb-3 lg:pb-0 lg:mb-36">
+                <p className="text-white opacity-70 font-extrabold md:mb-9 lg:mb-0 mt-3">
                   Visa, Mastercard, Ammex
                 </p>
               </div>
               <div>
-                <p className="text-white font-extrabold">Paypal</p>
+                <p className="text-white opacity-70 font-extrabold md:mb-9 lg:mb-0 mt-3">
+                  Paypal
+                </p>
               </div>
             </div>
 
@@ -107,26 +120,11 @@ export default function PricingCard() {
                 </p>
               </div>
               <div>
-                <p className="text-white opacity-70 font-extrabold md:mb-9 lg:mb-0">
-                  Uganda
-                </p>
-              </div>
-              <div>
-                <p className="text-white opacity-70 font-extrabold mb-3 mt-3">
-                  Rwanda
+                <p className="text-white opacity-70 font-extrabold md:mb-9 lg:mb-0 ">
+                  Global
                 </p>
               </div>
 
-              <div>
-                <p className="text-white opacity-70 font-extrabold md:mb-9 lg:mb-0 mt-3">
-                  United States
-                </p>
-              </div>
-              <div>
-                <p className="text-white opacity-70 font-extrabold md:mb-6 lg:mb-9 mt-3">
-                  Kenya
-                </p>
-              </div>
               <div>
                 <p className="text-white opacity-70 font-extrabold mt-3">
                   Global
@@ -141,20 +139,9 @@ export default function PricingCard() {
                 </p>
               </div>
               <div>
-                <p className="text-white font-extrabold">Ugx 1000 + 3%</p>
-              </div>
-              <div>
-                <p className="text-white font-extrabold mt-3">Rwf 300 + 3%</p>
+                <p className="text-white font-extrabold mt-3">N/a + 4%</p>
               </div>
 
-              <div>
-                <p className="text-white font-extrabold mt-3">Usd 0.30 + 3%</p>
-              </div>
-              <div>
-                <p className="text-white font-extrabold mb-6 lg:mb-9 mt-3">
-                  Ksh. 30 + 3%
-                </p>
-              </div>
               <div>
                 <p className="text-white font-extrabold mt-3">N/a + 5%</p>
               </div>

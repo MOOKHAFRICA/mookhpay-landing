@@ -18,18 +18,15 @@ export default function Home() {
       <main>
         <div className="h-screen w-screen grid grid-cols-1 md:grid-cols-1 lg:flex">
           <div className="bg-cwc-loginbg h-20 lg:h-full w-full">
-            <div className="mx-6 lg:mt-72">
+            <div className="mx-20 lg:mt-72">
               <h1 className="text-white font-extrabold text-2xl pt-6 lg:pt-0">
                 <Link href="/">
                   <a>
-                    mookh.
-                    <span className="text-cwc-blue font-extrabold text-2xl">
-                      pay
-                    </span>
+                    <img src="/logo1.png" className="login-img" />
                   </a>
                 </Link>
               </h1>
-              <p className="invisible lg:visible text-white font-medium text-xl opacity-60 mt-10">
+              <p className="invisible lg:visible text-white font-semibold text-xl  mt-10">
                 The payments solution for small <br />
                 businesses.
               </p>

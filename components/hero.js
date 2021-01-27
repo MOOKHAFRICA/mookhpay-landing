@@ -9,8 +9,8 @@ export default function HeroSection() {
           Accept online payments today. Grow your business with
           <br />
           trusted effortless payments.
-          <a href="">
-            <span className="text-cwc-blue">Get Started</span>
+          <a href="https://mookhpay.docs.apiary.io/" target="_blank">
+            <span className="text-cwc-blue"> Get Started</span>
           </a>
         </p>
 

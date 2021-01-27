@@ -16,10 +16,14 @@ html {
 }
 
 .logo-img {
-  width: 133px;
-  height: 32px;
+  width: 134px;
+  height: 29px;
 }
 .logo-footer {
-  width: 160px;
-  height: 39px;
+  width: 159px;
+  height: 35px;
+}
+.login-img {
+  width: 215px;
+  height: 52px;
 }

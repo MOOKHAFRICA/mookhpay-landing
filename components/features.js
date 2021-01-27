@@ -7,7 +7,10 @@ export default function Feature() {
         </h1>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8   container mx-auto">
-        <div className="bg-cwc-loginbg hover:bg-gradient-to-r from-cwc-fone to-cwc-tone rounded-3xl p-8 lg:p-12 opacity-80">
+        <div
+          className="bg-cwc-loginbg hover:bg-gradient-to-r from-cwc-fone to-cwc-tone rounded-3xl p-8 lg:p-12 opacity-80"
+          id="feature-1"
+        >
           <p className="text-cwc-blue font-bold pb-2">
             <a href="#"> Get Started </a>
           </p>
@@ -34,7 +37,10 @@ export default function Feature() {
             </button>
           </div>
         </div>
-        <div className="bg-cwc-loginbg hover:bg-gradient-to-r from-cwc-fone to-cwc-tone rounded-3xl p-8 lg:p-12 opacity-80">
+        <div
+          className="bg-cwc-loginbg hover:bg-gradient-to-r from-cwc-fone to-cwc-tone rounded-3xl p-8 lg:p-12 opacity-80"
+          id="feature-2"
+        >
           <p className="text-cwc-blue font-bold pb-2">
             <a href="#"> Get Started </a>
           </p>
@@ -54,7 +60,10 @@ export default function Feature() {
             </button>
           </div>
         </div>
-        <div className="bg-cwc-loginbg hover:bg-gradient-to-r from-cwc-fone to-cwc-tone rounded-3xl p-8 lg:p-12 opacity-80">
+        <div
+          className="bg-cwc-loginbg hover:bg-gradient-to-r from-cwc-fone to-cwc-tone rounded-3xl p-8 lg:p-12 opacity-80"
+          id="feature-3"
+        >
           <p className="text-cwc-blue font-bold pb-2">
             <a href="#"> Get Started </a>
           </p>
@@ -68,7 +77,10 @@ export default function Feature() {
             your preferred internet-connected device.
           </p>
         </div>
-        <div className="bg-cwc-loginbg hover:bg-gradient-to-r from-cwc-fone to-cwc-tone rounded-3xl p-8 lg:p-12 opacity-80">
+        <div
+          className="bg-cwc-loginbg hover:bg-gradient-to-r from-cwc-fone to-cwc-tone rounded-3xl p-8 lg:p-12 opacity-80"
+          id="feature-4"
+        >
           <p className="text-cwc-blue font-bold pb-2">
             <a href="#"> Get Started </a>
           </p>
