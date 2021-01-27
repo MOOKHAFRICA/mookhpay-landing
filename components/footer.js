@@ -1,6 +1,43 @@
+import { useState } from "react";
 import Link from "next/link";
+import axios from "axios";
+
+import { SENDGRID_KEY } from "./../config/constants";
 export default function Footer() {
+  const [email, setEmail] = useState("");
+  const [isSubscribing, setSubscribing] = useState(false);
+  const [isSubscribed, setSubscribed] = useState(false);
+  const [isError, setError] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setSubscribing(true);
+
+    axios
+      .post(
+        "https://api.sendgrid.com/v3/contactdb/recipients",
+        JSON.stringify([{ email }]),
+        {
+          headers: {
+            Authorization: `Bearer ${SENDGRID_KEY}`,
+            "content-type": "application/json",
+          },
+        }
+      )
+      .then(() => {
+        setSubscribed(true);
+        setSubscribing(false);
+        setEmail("");
+      })
+      .catch((error) => {
+        setError(true);
+        setSubscribing(false);
+        console.error(error);
+      });
+  };
+
   const yearNow = new Date().getFullYear();
+
   return (
     <footer className="mx-8 mt-10 mb-14 w-screen">
       <div className="container mx-auto">
@@ -78,29 +115,44 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="lg:flex space-x-4 md:space-x-16 mt-10 lg:mt-24">
-          <div className="invisible lg:visible">
-            <p className="text-black  font-semibold">
-              Receive the latest <br />
-              updates from our team
-            </p>
+        <form onSubmit={handleSubmit}>
+          <div className="lg:flex space-x-4 md:space-x-16 mt-10 lg:mt-24">
+            <div className="invisible lg:visible">
+              <p className="text-black  font-semibold">
+                Receive the latest <br />
+                updates from our team
+              </p>
+            </div>
+            <div>
+              <input
+                className="focus:ring-cwc-blue focus:border-cwc-blue mb-3 lg:mb-0 w-auto lg:w-full pr-20 md:pr-40 border border-gray-300"
+                type="email"
+                placeholder="E-mail Address"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                id="subscribeEmail"
+              />
+            </div>
+            <div>
+              <button
+                type="submit"
+                className="bg-cwc-blue text-white md:font-bold py-2 px-8 md:px-12 rounded-md"
+                type="submit"
+              >
+                {isSubscribing ? (
+                  "Subscribing..."
+                ) : isError ? (
+                  <>Something went wrong &#x2715;</>
+                ) : isSubscribed ? (
+                  <>Subcribed &#x2713;</>
+                ) : (
+                  "Subscribe"
+                )}
+              </button>
+            </div>
           </div>
-          <div>
-            <input
-              className="focus:ring-cwc-blue focus:border-cwc-blue mb-3 lg:mb-0 w-auto lg:w-full pr-20 md:pr-40 border border-gray-300"
-              type="text"
-              placeholder="E-mail Address"
-            />
-          </div>
-          <div>
-            <button
-              className="bg-cwc-blue text-white md:font-bold py-2 px-8 md:px-12 rounded-md"
-              type="submit"
-            >
-              Subscribe
-            </button>
-          </div>
-        </div>
+        </form>
+
         <div className="mt-10 mb-10 border-b border-gray-600 opacity-20 xlg:mr-28">
           <hr />
         </div>
