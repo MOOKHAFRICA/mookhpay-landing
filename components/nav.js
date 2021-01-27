@@ -107,22 +107,22 @@ export default function NavBar({ isOpen }) {
                   Guides
                 </a>
               </li>
-              <li className="">
+              {/* <li className="">
                 <a
                   className="block px-4 py-2 whitespace-no-wrap bg-gray-500 rounded-b hover:bg-gray-800"
                   href="#"
                 >
                   Packages
                 </a>
-              </li>
-              <li className="">
+              </li> */}
+              {/* <li className="">
                 <a
                   className="block px-4 py-2 whitespace-no-wrap bg-gray-500 rounded-b hover:bg-gray-800"
                   href="#"
                 >
                   Changelog
                 </a>
-              </li>
+              </li> */}
             </ul>
           </li>
           <li className="relative md:ml-4">

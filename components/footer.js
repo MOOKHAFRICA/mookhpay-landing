@@ -31,16 +31,16 @@ export default function Footer() {
                 </a>
               </Link>
             </div>
-            <div className="pt-2">
+            {/* <div className="pt-2">
               <Link href="/#">
                 <a className="text-cwc-grey text-base mt-3">Packages</a>
               </Link>
-            </div>
-            <div className="pt-2">
+            </div> */}
+            {/* <div className="pt-2">
               <Link href="/#">
                 <a className="text-cwc-grey text-base mt-3">Changelog</a>
               </Link>
-            </div>
+            </div> */}
           </div>
           <div>
             <div>
