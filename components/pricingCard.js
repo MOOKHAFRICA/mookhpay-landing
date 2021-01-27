@@ -74,19 +74,19 @@ export default function PricingCard() {
               </div>
               <div className="md:mt-20">
                 <div>
-                  <p className="text-white font-extrabold">Ugx 0 + 3%</p>
+                  <p className="text-white font-extrabold">3%</p>
                 </div>
                 <div>
-                  <p className="text-white font-extrabold mt-3">Rwf 0 + 3%</p>
+                  <p className="text-white font-extrabold mt-3">3%</p>
                 </div>
                 <div>
-                  <p className="text-white font-extrabold mt-3">Ugx 0 + 3%</p>
+                  <p className="text-white font-extrabold mt-3">3%</p>
                 </div>
                 <div>
-                  <p className="text-white font-extrabold mt-3">Kes 0 + 2%</p>
+                  <p className="text-white font-extrabold mt-3">2%</p>
                 </div>
                 <div>
-                  <p className="text-white font-extrabold mt-3">Kes 0 + 2%</p>
+                  <p className="text-white font-extrabold mt-3">2%</p>
                 </div>
               </div>
             </div>
@@ -139,11 +139,11 @@ export default function PricingCard() {
                 </p>
               </div>
               <div>
-                <p className="text-white font-extrabold mt-3">N/a + 4%</p>
+                <p className="text-white font-extrabold mt-3">4%</p>
               </div>
 
               <div>
-                <p className="text-white font-extrabold mt-3">N/a + 5%</p>
+                <p className="text-white font-extrabold mt-3">5%</p>
               </div>
             </div>
           </div>
