@@ -1,3 +1,3 @@
-module.exports = {
-    assetPrefix: "/about-us"
-}
+// module.exports = {
+//     assetPrefix: "/about-us"
+// }
