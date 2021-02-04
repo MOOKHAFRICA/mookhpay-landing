@@ -5,11 +5,11 @@ const description =
 const SEO = {
   title,
   description,
-  canonical: "https://mookhpay.com",
+  canonical: "https://mookhpay.com/about-us",
   openGraph: {
     type: "website",
     locale: "en_IE",
-    url: "https://mookhpay.com",
+    url: "https://mookhpay.com/about-us",
     title,
     description,
   },
