@@ -142,7 +142,7 @@ export default function NavBar({ isOpen }) {
           } list-reset md:flex md:space-x-10`}
         >
           <li className="md:ml-4">
-            <Link href="/login">
+            <Link href="https://mookhpay.com/login">
               <a className="block no-underline text-base font-semibold py-2 text-white md:p-0">
                 Log In
               </a>
@@ -152,7 +152,7 @@ export default function NavBar({ isOpen }) {
             <a
               className="block py-4 text-base font-semibold text-cwc-blue md:p-0"
               target="_blank"
-              href="mailto:info@mookhpay.com"
+              href="mailto:payments@mookh.africa"
             >
               Sign Up
             </a>
