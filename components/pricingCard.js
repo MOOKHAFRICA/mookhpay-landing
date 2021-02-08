@@ -3,7 +3,7 @@ export default function PricingCard() {
     <div className="w-screen">
       <div className="container mx-auto">
         <div className="bg-cwc-featuresbg hover:bg-gradient-to-r from-cwc-fone to-cwc-tone rounded-3xl p-12 pb-24 opacity-80">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-3 gap-4">
             <div>
               <div>
                 <p className="text-white font-extrabold text-lg lg:text-xl">
@@ -94,7 +94,7 @@ export default function PricingCard() {
           <div className="mt-10 mb-10 border border-gray-500 text-white opacity-20">
             <hr />
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-3 gap-4">
             <div>
               <div>
                 <p className="text-white opacity-70 lg:text-lg mb-6 lg:pb-6 font-extrabold">
