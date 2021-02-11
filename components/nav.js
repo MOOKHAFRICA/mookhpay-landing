@@ -142,7 +142,7 @@ export default function NavBar({ isOpen }) {
           } list-reset md:flex md:space-x-10`}
         >
           <li className="md:ml-4">
-            <Link href="/login">
+            <Link href="https://mookhpay.com/login" target="_blank">
               <a className="block no-underline text-base font-semibold py-2 text-white md:p-0">
                 Log In
               </a>
