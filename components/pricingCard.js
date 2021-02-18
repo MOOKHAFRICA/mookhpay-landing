@@ -103,7 +103,7 @@ export default function PricingCard() {
               </div>
               <div>
                 <p className="text-white opacity-70 font-extrabold md:mb-9 lg:mb-0 mt-3">
-                  Visa, Mastercard, Ammex
+                  Visa, Mastercard, Amex
                 </p>
               </div>
               <div>
