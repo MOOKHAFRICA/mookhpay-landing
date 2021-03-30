@@ -39,14 +39,14 @@ export default function Footer() {
   const yearNow = new Date().getFullYear();
 
   return (
-    <footer className="mx-8 mt-10 mb-14 w-screen">
-      <div className="container mx-auto">
-        <div>
+    <footer className=" mt-10 mb-14 w-screen">
+      <div className="container ">
+        <div className="mx-8">
           <h1 className="text-blck font-medium text-2xl">
             You're in good hands.
           </h1>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 mt-14">
+        <div className="grid grid-cols-1 md:grid-cols-3 mt-14 mx-8">
           <div>
             <div>
               <p className="text-black font-medium text-lg">Developers</p>
@@ -117,7 +117,7 @@ export default function Footer() {
         </div>
         <form onSubmit={handleSubmit}>
           <div className="lg:flex space-x-4 md:space-x-16 mt-10 lg:mt-24">
-            <div className="invisible lg:visible">
+            <div className="invisible lg:visible mx-8">
               <p className="text-black  font-semibold">
                 Receive the latest <br />
                 updates from our team
@@ -156,25 +156,25 @@ export default function Footer() {
         <div className="mt-10 mb-10 border-b border-gray-600 opacity-20 xlg:mr-28">
           <hr />
         </div>
-        <div className="grid text-center lg:text-justify grid-cols-1 lg:grid-cols-4 mt-6">
-          <div className="mb-4">
+        <div className="grid grid-cols-1 lg:grid-cols-4 mt-6">
+          <div className="mb-4 mx-auto">
             <Link href="/">
-              <a className="text-black font-black text-3xl">
-                <img src="logo.png" className="logo-footer " />
-              </a>
+              <ata>
+                <img src="logo.png" className="logo-footer  object-center" />
+              </ata>
             </Link>
           </div>
-          <div className="mb-2">
+          <div className="mb-2 mx-8">
             <p className="text-cwc-grey text-base underline">
               <a href="#">Terms and Conditions</a>
             </p>
           </div>
-          <div className="mb-6">
+          <div className="mb-6 mx-8">
             <p className="text-cwc-grey text-base underline">
               <a href="#">Privacy & Cookie Policy</a>
             </p>
           </div>
-          <div>
+          <div className="mx-8">
             <p className="text-black font-medium text-base">
               {`© Mookh Africa Ltd ${yearNow}.`}
             </p>

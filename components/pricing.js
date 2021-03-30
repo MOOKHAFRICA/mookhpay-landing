@@ -1,7 +1,7 @@
 export default function Pricing() {
   return (
     <div
-      className="container mx-8 lg:mx-auto grid grid-cols-1 md:grid-cols-2 pb-16"
+      className="container mx-8 lg:mx-auto grid grid-cols-1 md:grid-cols-2 pb-16 w-auto"
       id="pricing"
     >
       <div>
