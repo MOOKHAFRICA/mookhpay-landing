@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Head from "next/head";
 import Header from "./../components/header";
 import Footer from "./../components/footer";
 import Container from "./../components/container";
@@ -46,6 +47,10 @@ export default function Terms() {
   const { width } = useWindowSize();
   return (
     <>
+      <Head>
+        <title>Terms | mookh.pay</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <div className="overflow-x-hidden">
         <main className="w-screen">
           <div className="relative bg-black  ">
@@ -619,7 +624,7 @@ export default function Terms() {
                       textDecoration: "underline",
                       fontWeight: "bold",
                     }}
-                    href="mailto:hello@mookh.africa"
+                    href="mailto:info@mookhpay.com"
                   >
                      info@mookhpay.com
                   </a>
