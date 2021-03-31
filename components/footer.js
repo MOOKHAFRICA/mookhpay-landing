@@ -159,19 +159,21 @@ export default function Footer() {
         <div className="grid grid-cols-1 lg:grid-cols-4 mt-6">
           <div className="mb-4 mx-auto">
             <Link href="/">
-              <ata>
-                <img src="logo.png" className="logo-footer  object-center" />
-              </ata>
+              <img src="logo.png" className="logo-footer  object-center" />
             </Link>
           </div>
           <div className="mb-2 mx-8">
             <p className="text-cwc-grey text-base underline">
-              <a href="#">Terms and Conditions</a>
+              <Link href="/terms">
+                <a>Terms and Conditions</a>
+              </Link>
             </p>
           </div>
           <div className="mb-6 mx-8">
             <p className="text-cwc-grey text-base underline">
-              <a href="#">Privacy & Cookie Policy</a>
+              <Link href="/privacy">
+                <a>Privacy & Cookie Policy</a>
+              </Link>
             </p>
           </div>
           <div className="mx-8">
