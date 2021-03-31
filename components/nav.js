@@ -35,7 +35,7 @@ export default function NavBar({ isOpen }) {
               <li className="">
                 <a
                   className="block px-4 py-2 whitespace-no-wrap  hover:bg-cwc-blue rounded"
-                  href="#feature-1"
+                  href="/#feature-1"
                 >
                   Quick Integration
                 </a>
@@ -43,7 +43,7 @@ export default function NavBar({ isOpen }) {
               <li className="">
                 <a
                   className="block px-4 py-2 whitespace-no-wrap hover:bg-cwc-blue rounded"
-                  href="#feature-2"
+                  href="/#feature-2"
                 >
                   Unique Payment Links
                 </a>
@@ -51,7 +51,7 @@ export default function NavBar({ isOpen }) {
               <li className="">
                 <a
                   className="block px-4 py-2 whitespace-no-wrap hover:bg-cwc-blue rounded"
-                  href="#feature-3"
+                  href="/#feature-3"
                 >
                   Realtime Dashboard
                 </a>
@@ -59,7 +59,7 @@ export default function NavBar({ isOpen }) {
               <li className="">
                 <a
                   className="block px-4 py-2 whitespace-no-wrap  hover:bg-cwc-blue rounded"
-                  href="#feature-4"
+                  href="/#feature-4"
                 >
                   Multiple Payment Methods
                 </a>
@@ -128,7 +128,7 @@ export default function NavBar({ isOpen }) {
           <li className="relative md:ml-4">
             <a
               className="block py-3 text-base font-semibold text-white no-underline md:p-0"
-              href="#pricing"
+              href="/#pricing"
             >
               Pricing
             </a>
