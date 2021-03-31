@@ -11,6 +11,7 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: column;
+  color: #31383e;
   width: 100%;
   font-family: "Open Sans", sans-serif;
 

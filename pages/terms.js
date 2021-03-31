@@ -11,6 +11,7 @@ const Wrapper = styled.div`
   justify-content: center;
   flex-direction: column;
   width: 100%;
+  color: #31383e;
   font-family: "Open Sans", sans-serif;
 
   .react-tabs {
