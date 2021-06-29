@@ -108,7 +108,7 @@ export default function Footer() {
               </p>
             </div>
             <div>
-              <p className="text-cwc-grey text-base mt-3">+254 798 984 826</p>
+              <p className="text-cwc-grey text-base mt-3">+254 798 984 828</p>
             </div>
             <div>
               <p className="text-cwc-grey text-base mt-3">info@mookhpay.com</p>
