@@ -155,7 +155,7 @@ export default function NavBar({ isOpen }) {
             <a
               className="block py-4 text-base font-semibold text-cwc-blue md:p-0"
               target="_blank"
-              href="mailto:payments@mookh.africa"
+              href="mailto:info@mookhpay.com"
             >
               Sign Up
             </a>

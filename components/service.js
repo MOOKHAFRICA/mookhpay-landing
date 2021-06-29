@@ -1,7 +1,7 @@
 export default function Service() {
   return (
-    <section className="w-screen mx-8">
-      <div className="container mx-auto lg:mx-auto grid grid-cols-1  md:grid-cols-2 pb-16 gap-4 pt-8">
+    <div className="container mx-auto">
+      <div className=" grid grid-cols-1  md:grid-cols-2 pb-16 gap-4 pt-8 mx-8 -w-auto">
         <div>
           <p className="text-black font-bold text-3xl opacity-90">
             A service built by <br />
@@ -10,8 +10,8 @@ export default function Service() {
             not a bank.
           </p>
         </div>
-        <div>
-          <p className="text-black font-bold text-base opacity-90 mb-2">
+        <div className="">
+          <p className="text-black font-bold text-base opacity-90 mb-2 ">
             You're in good hands.
           </p>
           <p className="text-cwc-grey font-semibold text-base opacity-90 mb-2">
@@ -24,6 +24,6 @@ export default function Service() {
           </p>
         </div>
       </div>
-    </section>
+    </div>
   );
 }

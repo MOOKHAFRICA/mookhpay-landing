@@ -1,3 +1,4 @@
+import Link from "next/link";
 export default function Feature() {
   return (
     <div className="pb-24 w-screen">
@@ -52,9 +53,14 @@ export default function Feature() {
             payment channels.
           </p>
           <div className="mt-4">
-            <button className="text-white font-medium py-2 px-4 border border-white rounded-sm">
-              View Example
-            </button>
+            <Link href="https://checkout.mookhpay.com/link/yourbrandname">
+              <a
+                target="_blank"
+                className="text-white font-medium py-2 px-4 border border-white rounded-sm"
+              >
+                View Example
+              </a>
+            </Link>
           </div>
         </div>
         <div
