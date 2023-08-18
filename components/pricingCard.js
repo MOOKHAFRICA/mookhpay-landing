@@ -162,7 +162,7 @@ export default function PricingCard() {
 
               <div>
                 <p className="text-white font-extrabold mt-3 md:text-lg text-xs">
-                  5%
+                  8%
                 </p>
               </div>
             </div>
