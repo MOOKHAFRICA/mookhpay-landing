@@ -1,4 +1,5 @@
 {
+  "homepage": "https://MOOKHAFRICA.github.io/mookhpay-landing",
   "name": "mookhpay-landing",
   "version": "0.1.0",
   "private": true,
@@ -6,8 +7,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "predeploy" : "npm run build",
-    "deploy" : "gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "export": "npm run build && next export -o _static"
   },
   "dependencies": {
@@ -20,6 +21,7 @@
     "postcss-cli": "^8.3.1",
     "react": "17.0.1",
     "react-dom": "17.0.1",
+    "save-dev": "0.0.1-security",
     "styled-components": "^5.2.2",
     "tailwindcss": "^2.0.2"
   },
