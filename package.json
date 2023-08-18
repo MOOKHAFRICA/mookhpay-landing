@@ -6,6 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build",
     "export": "npm run build && next export -o _static"
   },
   "dependencies": {
@@ -24,6 +26,7 @@
   "devDependencies": {
     "@tailwindcss/custom-forms": "^0.2.1",
     "@tailwindcss/jit": "^0.1.17",
-    "babel-plugin-styled-components": "^1.12.0"
+    "babel-plugin-styled-components": "^1.12.0",
+    "gh-pages": "^6.0.0"
   }
 }
