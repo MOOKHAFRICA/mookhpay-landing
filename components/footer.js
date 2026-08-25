@@ -1,8 +1,5 @@
-import { useState } from "react";
 import Link from "next/link";
-import axios from "axios";
 
-import { SENDGRID_KEY } from "./../config/constants";
 import { BASE } from "./../config/site";
 
 const COLUMN_HEAD =
@@ -11,38 +8,6 @@ const COLUMN_LINK =
   "text-sm tracking-[-0.56px] text-[#111827] hover:text-black hover:underline hover:underline-offset-4";
 
 export default function Footer() {
-  const [email, setEmail] = useState("");
-  const [isSubscribing, setSubscribing] = useState(false);
-  const [isSubscribed, setSubscribed] = useState(false);
-  const [isError, setError] = useState(false);
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setSubscribing(true);
-
-    axios
-      .post(
-        "https://api.sendgrid.com/v3/contactdb/recipients",
-        JSON.stringify([{ email }]),
-        {
-          headers: {
-            Authorization: `Bearer ${SENDGRID_KEY}`,
-            "content-type": "application/json",
-          },
-        }
-      )
-      .then(() => {
-        setSubscribed(true);
-        setSubscribing(false);
-        setEmail("");
-      })
-      .catch((error) => {
-        setError(true);
-        setSubscribing(false);
-        console.error(error);
-      });
-  };
-
   const yearNow = new Date().getFullYear();
 
   return (
@@ -135,45 +100,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <form onSubmit={handleSubmit}>
-        <div className="mt-10 flex flex-col gap-3 border-t border-[#E3E3E3] pt-8 lg:flex-row lg:items-center lg:gap-6">
-          <p className="text-base font-medium tracking-[-0.64px] text-[#111827]">
-            Receive the latest updates from our team
-          </p>
-          <input
-            className="w-full rounded-xl border-0 bg-[#EFEFEF] px-4 py-2 text-[#6B6F7A] placeholder-[#6B6F7A] focus:outline-none focus:ring-2 focus:ring-black/10 lg:max-w-sm"
-            type="email"
-            placeholder="E-mail Address"
-            aria-label="E-mail address"
-            required
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            id="subscribeEmail"
-          />
-          <button
-            type="submit"
-            className={`rounded-xl px-6 py-2 text-base tracking-[-0.64px] transition-colors ${
-              isError
-                ? "bg-sal-pink text-black hover:opacity-90"
-                : isSubscribed
-                ? "bg-sal-green text-black"
-                : "bg-black text-white hover:bg-gray-900"
-            }`}
-          >
-            {isSubscribing ? (
-              "Subscribing..."
-            ) : isError ? (
-              <>Something went wrong &#x2715;</>
-            ) : isSubscribed ? (
-              <>Subscribed &#x2713;</>
-            ) : (
-              "Subscribe"
-            )}
-          </button>
-        </div>
-      </form>
-
-      <div className="mt-8 border-t border-[#E3E3E3] pt-5">
+      <div className="mt-10 border-t border-[#E3E3E3] pt-5">
         <p className="font-mono text-xs tracking-tight text-[#818287]">
           {`© Mookh Africa Ltd ${yearNow}.`}
         </p>
