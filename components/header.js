@@ -1,30 +1,30 @@
 import { useState } from "react";
 import Link from "next/link";
 import NavBar from "./nav";
-import HeroSection from "./hero";
+import { BASE } from "../config/site";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <header className="lg:container lg:mx-auto md:flex md:items-center md:justify-between p-4 pb-0 shadow-lg md:pb-4">
-      <div className="flex items-center justify-between mb-4 md:mb-0">
-        <h1 className="leading-none text-2xl text-white font-bold">
-          <Link href="/">
-            <a className="no-underline text-white">
-              <img src="/logo1.png" className="logo-img" />
-            </a>
-          </Link>
-        </h1>
+    <header className="flex flex-wrap items-center justify-between gap-3 md:gap-4">
+      <div className="flex w-full items-center justify-between md:w-auto">
+        <Link href="/" className="shrink-0">
+          <img
+            src={`${BASE}/logo.svg`}
+            alt="Mookhpay"
+            className="h-10 w-auto"
+          />
+        </Link>
 
         <button
-          className="cursor-pointer px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white md:hidden block"
+          type="button"
+          aria-label="Toggle menu"
+          className="rounded-xl bg-white p-2 shadow-card md:hidden"
           onClick={() => setIsOpen(!isOpen)}
         >
           <svg
-            className="fill-current text-gray-400"
+            className="h-5 w-5 fill-current text-[#111827]"
             xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="20"
             viewBox="0 0 20 20"
           >
             <title>menu</title>

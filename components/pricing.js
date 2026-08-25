@@ -1,26 +1,27 @@
+import { BASE } from "../config/site";
+
 export default function Pricing() {
   return (
-    <div
-      className="container mx-8 lg:mx-auto grid grid-cols-1 md:grid-cols-2 pb-16 w-auto"
-      id="pricing"
-    >
-      <div>
-        <p className="text-white text-2xl font-extrabold mb-4">Pricing</p>
-        <p className="text-white font-normal opacity-70">
-          No minimum costs, no lock-in contracts, no hidden fees. You only pay
-          <br />
-          for successful transactions.
-        </p>
+    <section id="pricing" className="flex flex-col gap-5 py-6">
+      <span className="font-mono text-xs uppercase tracking-wider text-[#818287]">
+        Pricing
+      </span>
+      <div className="flex items-center gap-4">
+        <h2 className="font-display text-[32px] font-medium leading-[1.1] tracking-[-1.28px] text-[#122022] md:text-[40px] md:tracking-[-1.6px]">
+          Pay only for what you collect.
+        </h2>
+        {/* PINCH — the Salimia hand for fees and micro-amounts */}
+        <img
+          src={`${BASE}/hands/pinch.png`}
+          alt=""
+          className="h-16 w-auto"
+          style={{ transform: "rotate(-15deg)" }}
+        />
       </div>
-      <div>
-        <p className="text-cwc-blue font-bold mb-4">
-          <a href="#">Special conditions? Request a quote »</a>
-        </p>
-        <p className="text-white font-normal opacity-70">
-          Settlement to Mobile Wallet is within 24 hours and to bank <br />
-          is within 48 hours of withdrawal request.
-        </p>
-      </div>
-    </div>
+      <p className="max-w-2xl text-base leading-[26px] tracking-[-0.64px] text-[#818287]">
+        No minimum costs, no lock-in contracts, no hidden fees. Settlement to
+        mobile wallet within 24 hours, to bank within 48 hours of request.
+      </p>
+    </section>
   );
 }

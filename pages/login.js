@@ -1,8 +1,10 @@
 import Link from "next/link";
 import { NextSeo } from "next-seo";
-export default function Home() {
+import { BASE } from "../config/site";
+
+export default function Login() {
   return (
-    <div className="overflow-x-hidden overflow-y-hidden">
+    <div className="min-h-screen bg-[#EFEFEF] p-4 md:p-6 lg:p-8">
       <NextSeo
         title="Login | mookh.pay"
         description="Login to  Mookh.pay to access all the cool features we have in store for you and your business."
@@ -15,102 +17,80 @@ export default function Home() {
         }}
       />
 
-      <main>
-        <div className="h-screen w-screen grid grid-cols-1 md:grid-cols-1 lg:flex">
-          <div className="bg-cwc-loginbg h-20 lg:h-full w-full">
-            <div className="mx-20 lg:mt-72">
-              <h1 className="text-white font-extrabold text-2xl pt-6 lg:pt-0">
-                <Link href="/">
-                  <a>
-                    <img src="/logo1.png" className="login-img" />
-                  </a>
-                </Link>
-              </h1>
-              <p className="invisible lg:visible text-white font-semibold text-xl  mt-10">
-                The payments solution for small <br />
-                businesses.
-              </p>
-              <p className="invisible lg:visible text-white text-sm opacity-60 mt-10">
-                Giving our clients an efficient way to request payments while
-                providing full control over <br />
-                their financial data within our feature-packed merchant
-                dashboard. Accept online <br />
-                payments today. Grow your business with trusted effortless
-                payments.
-              </p>
-            </div>
-          </div>
-          <div className="h-3/4 lg:h-full bg-black w-full">
-            <div className="mb-80 mx-6 lg:mt-64 lg:mx-60">
-              <p className="text-white text-base pt-24 lg:pt-0">
-                Sign in to start your session
-              </p>
-              <div className="mt-8">
-                <input
-                  className="bg-cwc-logininputbg text-white focus:ring-cwc-blue focus:border-cwc-blue w-full pl-4 pr-12 rounded-md"
-                  type="text"
-                  placeholder="youremail@mail.com"
-                />
-              </div>
-              <div className="mt-5">
-                <input
-                  className="bg-cwc-logininputbg text-white focus:ring-cwc-blue focus:border-cwc-blue w-full pl-4 pr-12 rounded-md"
-                  type="password"
-                />
-              </div>
-              <div className="mt-8">
-                <button
-                  type="button"
-                  className="group text-white space-x-2 inline-flex focus:outline-none"
-                >
-                  <span>Remember me</span>
+      <main className="mx-auto flex max-w-[1512px] flex-col gap-4 lg:min-h-[calc(100vh-4rem)] lg:flex-row">
+        <section className="flex flex-1 flex-col justify-center rounded-[20px] border-b border-[#E3E3E3] bg-white p-8 shadow-card md:p-14">
+          <Link href="/" className="inline-block">
+            <img
+              src={`${BASE}/logo.svg`}
+              alt="Mookhpay"
+              className="h-14 w-auto"
+            />
+          </Link>
+          <h1 className="mt-10 font-display text-4xl font-normal leading-[0.95] tracking-[-0.06em] text-[#122022] sm:text-[52px] lg:text-[64px]">
+            The payments solution for small businesses.
+          </h1>
+          <p className="mt-6 max-w-lg text-sm leading-6 tracking-[-0.56px] text-[#818287]">
+            Giving our clients an efficient way to request payments while
+            providing full control over their financial data within our
+            feature-packed merchant dashboard. Accept online payments today.
+            Grow your business with trusted effortless payments.
+          </p>
+          {/* PEACE — the Salimia hand for sign-off */}
+          <img
+            src={`${BASE}/hands/peace.png`}
+            alt=""
+            className="mt-10 h-28 w-auto self-start"
+            style={{ transform: "rotate(-15deg)" }}
+          />
+        </section>
 
-                  <svg
-                    className="text-cwc-blue"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 28 20"
-                    width="20px"
-                    height="20px"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
-                    />
-                  </svg>
-                </button>
-                <button
-                  className="text-white bg-cwc-blue px-11 py-2 rounded-md"
-                  type="submit"
-                >
-                  Log In
-                </button>
-              </div>
-              <div className="mt-8">
-                <p className="text-cwc-grey underline">
-                  <a href="#">Forgot your password?</a>
-                </p>
-              </div>
-              <div className="flex mx-4 space-x-2 pt-72 lg:invisible">
-                <div className="text-cwc-grey">
-                  <a href="#">Contact Us</a>
-                </div>
-                <div className="text-cwc-grey">
-                  <a href="#">Privacy</a>
-                </div>
-                <div className="text-cwc-grey">
-                  <a href="#">Legal</a>
-                </div>
-                <div className="text-cwc-grey">
-                  <a href="#">Worldwide</a>
-                </div>
-              </div>
+        <section className="flex flex-1 flex-col justify-center rounded-[20px] border-b border-[#E3E3E3] bg-white p-8 shadow-card md:p-14">
+          <div className="mx-auto w-full max-w-md">
+            <h2 className="font-display text-[28px] font-medium tracking-[-1.12px] text-[#122022]">
+              Log in
+            </h2>
+            <p className="mt-2 text-base tracking-[-0.64px] text-[#818287]">
+              Sign in to start your session
+            </p>
+
+            <div className="mt-8">
+              <input
+                className="w-full rounded-xl border-0 bg-[#EFEFEF] px-4 py-3 text-[#6B6F7A] placeholder-[#6B6F7A] focus:outline-none focus:ring-2 focus:ring-black/10"
+                type="text"
+                placeholder="youremail@mail.com"
+              />
             </div>
+            <div className="mt-4">
+              <input
+                className="w-full rounded-xl border-0 bg-[#EFEFEF] px-4 py-3 text-[#6B6F7A] placeholder-[#6B6F7A] focus:outline-none focus:ring-2 focus:ring-black/10"
+                type="password"
+                placeholder="Password"
+              />
+            </div>
+
+            <div className="mt-6 flex items-center justify-between">
+              <label className="flex items-center gap-2 text-sm tracking-[-0.56px] text-[#111827]">
+                <input
+                  type="checkbox"
+                  className="h-4 w-4 rounded border-[#D0D7DE] text-black focus:ring-black/10"
+                />
+                Remember me
+              </label>
+              <button
+                className="rounded-xl bg-black px-8 py-2 text-base tracking-[-0.64px] text-white transition-colors hover:bg-gray-900"
+                type="submit"
+              >
+                Log In
+              </button>
+            </div>
+
+            <p className="mt-8 text-sm tracking-[-0.56px] text-[#818287]">
+              <a href="#" className="underline underline-offset-4 hover:text-[#111827]">
+                Forgot your password?
+              </a>
+            </p>
           </div>
-        </div>
+        </section>
       </main>
     </div>
   );

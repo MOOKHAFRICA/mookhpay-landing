@@ -1,34 +1,23 @@
 {
   "homepage": "https://mookhafrica.github.io/mookhpay-landing",
   "name": "mookhpay-landing",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "export": "npm run build && next export -o _static"
+    "start": "next start"
   },
   "dependencies": {
-    "@tailwindcss/forms": "^0.2.1",
-    "autoprefixer": "^10.1.0",
-    "axios": "^0.21.1",
-    "next": "10.0.6",
-    "next-seo": "^4.17.0",
-    "postcss": "^8.2.1",
-    "postcss-cli": "^8.3.1",
-    "react": "17.0.1",
-    "react-dom": "17.0.1",
-    "save-dev": "0.0.1-security",
-    "styled-components": "^5.2.2",
-    "tailwindcss": "^2.0.2"
+    "axios": "^1.7.0",
+    "next": "^15.4.0",
+    "next-seo": "^6.6.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
-    "@tailwindcss/custom-forms": "^0.2.1",
-    "@tailwindcss/jit": "^0.1.17",
-    "babel-plugin-styled-components": "^1.12.0",
-    "gh-pages": "^6.0.0"
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.14"
   }
 }
