@@ -102,6 +102,14 @@ export default function NavBar({ isOpen }) {
         <ul className="md:flex md:items-center md:gap-3">
           <li>
             <a
+              href="https://mookhpay.com/login"
+              className="flex items-center px-4 sm:px-6 py-2 rounded-[20px] text-sm sm:text-base font-medium tracking-[-0.64px] text-[#111827] transition-colors md:bg-white/80 md:shadow-md md:hover:bg-white"
+            >
+              Log In
+            </a>
+          </li>
+          <li>
+            <a
               href="mailto:info@mookhpay.com"
               className="flex items-center px-4 sm:px-6 py-2 rounded-[20px] text-sm sm:text-base font-medium tracking-[-0.64px] transition-colors md:bg-black md:text-white md:shadow-md md:hover:bg-gray-900"
             >
