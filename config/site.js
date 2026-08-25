@@ -1,4 +1,4 @@
-// Prefix for static assets on GitHub Pages (project site under /mookhpay-landing).
-// next/link hrefs get the basePath automatically — only use BASE for asset src paths.
-export const BASE =
-  process.env.NODE_ENV === "production" ? "/mookhpay-landing" : "";
+// Asset prefix. Empty: the site is served at the domain root
+// (DigitalOcean App Platform). Set this only if the site ever moves
+// to a sub-path host again.
+export const BASE = "";
