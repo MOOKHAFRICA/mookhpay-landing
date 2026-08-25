@@ -1,53 +1,10 @@
-import styled from "styled-components";
 import Head from "next/head";
 
 import Header from "./../components/header";
 import Footer from "./../components/footer";
 import Container from "./../components/container";
 
-import { useWindowSize } from "./../utils/hooks";
-
-const Wrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  color: #31383e;
-  width: 100%;
-  font-family: "Open Sans", sans-serif;
-
-  .react-tabs {
-    width: 100%;
-  }
-  h3 {
-    padding-bottom: 4px;
-    color: #989c9f;
-    font-size: 14px;
-    font-weight: 600;
-  }
-
-  ul {
-    display: flex;
-    justify-content: center;
-    margin-top: 28px;
-    cursor: pointer;
-  }
-  .terms-heading {
-    text-align: center;
-    margin-top: 28px;
-  }
-  .terms-body {
-  }
-  hr {
-    border: 0.5px solid #989c9f;
-    margin: 40px 0;
-  }
-  .terms-body p {
-    padding-bottom: 10px;
-  }
-`;
-
 export default function Privacy() {
-  const { width } = useWindowSize();
   return (
     <>
       <Head>
@@ -55,21 +12,19 @@ export default function Privacy() {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
 
-      <div className="overflow-x-hidden">
-        <main className="w-screen h-screen">
-          <div className="relative bg-black  ">
-            <Header />
-          </div>
-          <Wrapper>
+      <div className="min-h-screen bg-[#EFEFEF] p-4 md:p-6 lg:px-8 lg:py-[22px]">
+        <div className="mx-auto flex max-w-[1512px] flex-col gap-4">
+          <Header />
+          <main className="flex flex-col gap-6">
             <div className="terms-heading">
-              <h2 className="font-extrabold">MOOKHPAY PRIVACY POLICY</h2>
-              <h5 className="font-semibold">Last Updated 22nd March 2021</h5>
+              <h1 className="font-display text-[28px] font-medium tracking-[-1.12px] text-[#122022]">
+                MOOKHPAY PRIVACY POLICY
+              </h1>
+              <p className="mt-1 text-sm tracking-[-0.56px] text-[#818287]">
+                Last Updated 22nd March 2021
+              </p>
             </div>
-            <Container
-              style={
-                width <= 539 ? { padding: "0 21px" } : { padding: "0 14px" }
-              }
-            >
+            <Container>
               <div className="terms-body">
                 <h4 style={{ marginTop: 28 }} className="font-bold">
                   OVERVIEW
@@ -363,13 +318,10 @@ export default function Privacy() {
                 />
               </div>
             </Container>
-          </Wrapper>
-        </main>
+          </main>
+          <Footer />
+        </div>
       </div>
-      <hr />
-      <footer className=" w-full  mx-auto container ">
-        <Footer />
-      </footer>
     </>
   );
 }

@@ -1,35 +1,27 @@
-const autoprefixer = require("autoprefixer");
-
 module.exports = {
-  purge: ["./pages/**/*.js", "./components/**/*.js"],
-  darkMode: false, // or 'media' or 'class'
+  content: ["./pages/**/*.js", "./components/**/*.js"],
   theme: {
     extend: {
-      colors: {
-        backgroundImage: (theme) => ({
-          "hero-pattern": "url('/public/img/hero.svg')",
-        }),
-        cwc: {
-          blue: "#1873E9",
-          grey: "#717171",
-          fone: "#06123A",
-          tone: "#175Cb7",
-          featuresbg: "#06123A",
-          featuresbtnbg: "#175CB7",
-          loginbg: "#040f24",
-          logininputbg: "#333333",
-        },
-      },
-      inset: {
-        464: "29rem",
-      },
       fontFamily: {
-        body: ["Poppins"],
+        display: ['"Bricolage Grotesque"', "system-ui", "sans-serif"],
+        body: ["Inter", "-apple-system", "Roboto", "Helvetica", "sans-serif"],
+      },
+      boxShadow: {
+        card: "0 2px 4px 0 rgba(0,0,0,0.1)",
+      },
+      colors: {
+        // Salimia action pastels — each pairs with black ink only
+        sal: {
+          green: "#CDE3B7", // Sage — positive / primary action
+          orange: "#F5B894", // Apricot — ask / request
+          blue: "#BFE0E2", // Mist — inbox / info
+          lilac: "#D9C5E8", // Lilac — auxiliary
+          yellow: "#F5E1A4", // Butter — auxiliary / pending
+          pink: "#F2A2C0", // Bloom — negative / attention
+          cream: "#F4E9C4", // Cream — editorial surface
+        },
       },
     },
   },
-  variants: {
-    extend: { backgroundImage: ["hover"], maxHeight: ["focus"] },
-  },
-  plugins: [require("@tailwindcss/forms")],
+  plugins: [],
 };
