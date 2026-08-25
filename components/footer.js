@@ -105,9 +105,9 @@ export default function Footer() {
 
         <div className="flex flex-col gap-3">
           <span className={COLUMN_HEAD}>Company</span>
-          <a className={COLUMN_LINK} href="/#pricing">
+          <Link className={COLUMN_LINK} href="/#pricing">
             Pricing
-          </a>
+          </Link>
           <Link className={COLUMN_LINK} href="/terms">
             Terms
           </Link>
@@ -144,6 +144,8 @@ export default function Footer() {
             className="w-full rounded-xl border-0 bg-[#EFEFEF] px-4 py-2 text-[#6B6F7A] placeholder-[#6B6F7A] focus:outline-none focus:ring-2 focus:ring-black/10 lg:max-w-sm"
             type="email"
             placeholder="E-mail Address"
+            aria-label="E-mail address"
+            required
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             id="subscribeEmail"
@@ -163,7 +165,7 @@ export default function Footer() {
             ) : isError ? (
               <>Something went wrong &#x2715;</>
             ) : isSubscribed ? (
-              <>Subcribed &#x2713;</>
+              <>Subscribed &#x2713;</>
             ) : (
               "Subscribe"
             )}

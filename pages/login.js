@@ -85,8 +85,11 @@ export default function Login() {
             </div>
 
             <p className="mt-8 text-sm tracking-[-0.56px] text-[#818287]">
-              <a href="#" className="underline underline-offset-4 hover:text-[#111827]">
-                Forgot your password?
+              <a
+                href="mailto:info@mookhpay.com?subject=Password%20reset"
+                className="underline underline-offset-4 hover:text-[#111827]"
+              >
+                Forgot your password? Contact support
               </a>
             </p>
           </div>

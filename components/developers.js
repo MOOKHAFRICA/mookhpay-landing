@@ -13,11 +13,14 @@ export default function Developers() {
   const [copied, setCopied] = useState(false);
 
   const copySnippet = () => {
-    if (navigator.clipboard) {
-      navigator.clipboard.writeText(SNIPPET).catch(() => {});
-    }
-    setCopied(true);
-    setTimeout(() => setCopied(false), 1600);
+    if (!navigator.clipboard) return;
+    navigator.clipboard
+      .writeText(SNIPPET)
+      .then(() => {
+        setCopied(true);
+        setTimeout(() => setCopied(false), 1600);
+      })
+      .catch(() => {});
   };
 
   return (

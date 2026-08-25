@@ -41,24 +41,24 @@ export default function NavBar({ isOpen }) {
             </button>
             <ul className={menuPanel}>
               <li>
-                <a className={menuItem} href="/#feature-1">
+                <Link className={menuItem} href="/#feature-1">
                   Quick Integration
-                </a>
+                </Link>
               </li>
               <li>
-                <a className={menuItem} href="/#feature-2">
+                <Link className={menuItem} href="/#feature-2">
                   Payment Links
-                </a>
+                </Link>
               </li>
               <li>
-                <a className={menuItem} href="/#feature-3">
+                <Link className={menuItem} href="/#feature-3">
                   Realtime Dashboard
-                </a>
+                </Link>
               </li>
               <li>
-                <a className={menuItem} href="/#feature-4">
+                <Link className={menuItem} href="/#feature-4">
                   One Settlement Currency
-                </a>
+                </Link>
               </li>
             </ul>
           </li>
@@ -91,9 +91,9 @@ export default function NavBar({ isOpen }) {
             </ul>
           </li>
           <li>
-            <a className={pill} href="/#pricing">
+            <Link className={pill} href="/#pricing">
               Pricing
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>
